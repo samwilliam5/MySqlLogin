@@ -1,15 +1,17 @@
-import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import "./App.css";
-import Main from "./pages/Main";
-import Registration from "./pages/Registration";
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from 'react-bootstrap/Container';
+import Login from './Pages/Login';
+
+
 
 function App() {
   return (
-    <Router>
-      <Route path="/registration" exact render={(props) => <Registration />} />
-      <Route path="/" exact render={(props) => <Main />} />
-    </Router>
+    <div className="App">
+      <Container>
+        <Login />
+      </Container>
+    </div>
   );
 }
 
